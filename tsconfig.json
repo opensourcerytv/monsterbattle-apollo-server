@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "outDir": "dist",
+        "types": [
+            "node"
+        ],
+        "noImplicitAny": false,
+        "forceConsistentCasingInFileNames": true
+    }
+}

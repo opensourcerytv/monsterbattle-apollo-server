@@ -1,0 +1,86 @@
+{
+  "monsters": [
+    {
+      "id": "r1nXNDqt-",
+      "name": "lowdb is awesome!!!!"
+    },
+    {
+      "id": "SJcBHwqKW",
+      "name": "lowdb is awesome!!!!"
+    },
+    {
+      "id": "H11wrwcY-",
+      "name": "lowdb is awesome!!!!"
+    },
+    {
+      "id": "r10DrwcYb",
+      "name": "lowdb is awesome!!!!"
+    },
+    {
+      "name": "Snorgul",
+      "health": 20,
+      "attack": 5,
+      "defense": 8,
+      "avatarUrl": "",
+      "id": "BJ7Ecvqtb"
+    },
+    {
+      "name": "Snorgul",
+      "health": 20,
+      "attack": 5,
+      "defense": 8,
+      "avatarUrl": "",
+      "id": "S1za5D9Fb"
+    },
+    {
+      "name": "Snorgul",
+      "health": 20,
+      "attack": 5,
+      "defense": 8,
+      "avatarUrl": "",
+      "id": "HkwA9vcFb"
+    },
+    {
+      "name": "Snorgul",
+      "health": 20,
+      "attack": 5,
+      "defense": 8,
+      "avatarUrl": "",
+      "id": "HksA9PcYW"
+    },
+    {
+      "name": "Snorgul",
+      "health": 20,
+      "attack": 5,
+      "defense": 8,
+      "avatarUrl": "",
+      "id": "HkUljPqtW"
+    },
+    {
+      "name": "Snorgul",
+      "health": 20,
+      "attack": 5,
+      "defense": 8,
+      "avatarUrl": "",
+      "id": "B1GmjPqYZ"
+    },
+    {
+      "name": "Snorgul",
+      "health": 20,
+      "attack": 5,
+      "defense": 8,
+      "avatarUrl": "",
+      "id": "r1RSjDqKZ"
+    },
+    {
+      "name": "Snorgul",
+      "health": 20,
+      "attack": 5,
+      "defense": 8,
+      "avatarUrl": "",
+      "id": "SJldiw9K-"
+    }
+  ],
+  "battles": [],
+  "turns": []
+}

@@ -1,0 +1,35 @@
+{
+  "name": "monsterbattle-apollo-server",
+  "version": "1.0.0",
+  "description": "Apollo GraphQL Server backend for the legendary OpenSourcery TV MonsterBattle App!",
+  "main": "index.js",
+  "scripts": {
+    "watch": "NODE_ENV=dev nodemon --watch '**/*.ts' --ignore 'node_modules' --exec 'ts-node' 'src/index.ts'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opensourcerytv/monsterbattle-apollo-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/opensourcerytv/monsterbattle-apollo-server/issues"
+  },
+  "homepage": "https://github.com/opensourcerytv/monsterbattle-apollo-server#readme",
+  "dependencies": {
+    "@types/node": "^8.0.26",
+    "apollo-server-express": "^1.1.2",
+    "axios": "^0.16.2",
+    "fs-extra": "^4.0.1",
+    "google-spreadsheet": "^2.0.4",
+    "graphql": "^0.11.2",
+    "graphql-apollo-errors": "^2.0.2",
+    "lodash": "^4.17.4",
+    "log": "^1.4.0",
+    "lowdb": "^1.0.0",
+    "shortid": "^2.2.8",
+    "ts-node": "^3.0.2",
+    "typescript": "^2.2.2"
+  }
+}

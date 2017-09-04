@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "hi!!!!"
+    },
+    {
+      "id": 2,
+      "title": "lowdb is awesome!!!!"
+    },
+    {
+      "id": 3,
+      "title": "lowdb is awesome!!!!"
+    }
+  ],
+  "user": {
+    "name": "typicode"
+  }
+}
