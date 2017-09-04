@@ -54,7 +54,7 @@ const resolvers = {
 				.write()
 		},
 		
-		newBattle: (root, args, ctx) => {
+		startBattle: (root, args, ctx) => {
 			const id = shortid.generate()
 			db.get('battles')
 				.push({ 

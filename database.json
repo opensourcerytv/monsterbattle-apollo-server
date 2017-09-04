@@ -1,84 +1,60 @@
 {
   "monsters": [
     {
-      "id": "r1nXNDqt-",
-      "name": "lowdb is awesome!!!!"
+      "name": "George",
+      "attack": 6,
+      "defense": 4,
+      "health": 30,
+      "avatarUrl": ""
     },
     {
-      "id": "SJcBHwqKW",
-      "name": "lowdb is awesome!!!!"
+      "name": "Mort",
+      "attack": 6,
+      "defense": 4,
+      "health": 30,
+      "avatarUrl": ""
     },
     {
-      "id": "H11wrwcY-",
-      "name": "lowdb is awesome!!!!"
+      "name": "Steve",
+      "attack": 6,
+      "defense": 4,
+      "health": 30,
+      "avatarUrl": ""
     },
     {
-      "id": "r10DrwcYb",
-      "name": "lowdb is awesome!!!!"
+      "name": "Donk",
+      "attack": 6,
+      "defense": 4,
+      "health": 30,
+      "avatarUrl": ""
     },
     {
-      "name": "Snorgul",
-      "health": 20,
-      "attack": 5,
-      "defense": 8,
-      "avatarUrl": "",
-      "id": "BJ7Ecvqtb"
+      "name": "Flip",
+      "attack": 6,
+      "defense": 4,
+      "health": 30,
+      "avatarUrl": ""
     },
     {
-      "name": "Snorgul",
-      "health": 20,
-      "attack": 5,
-      "defense": 8,
-      "avatarUrl": "",
-      "id": "S1za5D9Fb"
+      "name": "Reginald",
+      "attack": 6,
+      "defense": 4,
+      "health": 30,
+      "avatarUrl": ""
     },
     {
-      "name": "Snorgul",
-      "health": 20,
-      "attack": 5,
-      "defense": 8,
-      "avatarUrl": "",
-      "id": "HkwA9vcFb"
+      "name": "Simon",
+      "attack": 6,
+      "defense": 4,
+      "health": 30,
+      "avatarUrl": ""
     },
     {
-      "name": "Snorgul",
-      "health": 20,
-      "attack": 5,
-      "defense": 8,
-      "avatarUrl": "",
-      "id": "HksA9PcYW"
-    },
-    {
-      "name": "Snorgul",
-      "health": 20,
-      "attack": 5,
-      "defense": 8,
-      "avatarUrl": "",
-      "id": "HkUljPqtW"
-    },
-    {
-      "name": "Snorgul",
-      "health": 20,
-      "attack": 5,
-      "defense": 8,
-      "avatarUrl": "",
-      "id": "B1GmjPqYZ"
-    },
-    {
-      "name": "Snorgul",
-      "health": 20,
-      "attack": 5,
-      "defense": 8,
-      "avatarUrl": "",
-      "id": "r1RSjDqKZ"
-    },
-    {
-      "name": "Snorgul",
-      "health": 20,
-      "attack": 5,
-      "defense": 8,
-      "avatarUrl": "",
-      "id": "SJldiw9K-"
+      "name": "Snot",
+      "attack": 6,
+      "defense": 4,
+      "health": 30,
+      "avatarUrl": ""
     }
   ],
   "battles": [],
