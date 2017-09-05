@@ -5,56 +5,64 @@
       "attack": 6,
       "defense": 4,
       "health": 30,
-      "avatarUrl": ""
+      "avatarUrl": "",
+      "id": "SJ9WGqcKW"
     },
     {
       "name": "Mort",
       "attack": 6,
       "defense": 4,
       "health": 30,
-      "avatarUrl": ""
+      "avatarUrl": "",
+      "id": "S1lqbG5qK-"
     },
     {
       "name": "Steve",
       "attack": 6,
       "defense": 4,
       "health": 30,
-      "avatarUrl": ""
+      "avatarUrl": "",
+      "id": "S1WqWGqqtb"
     },
     {
       "name": "Donk",
       "attack": 6,
       "defense": 4,
       "health": 30,
-      "avatarUrl": ""
+      "avatarUrl": "",
+      "id": "S1M5Wzc9t-"
     },
     {
       "name": "Flip",
       "attack": 6,
       "defense": 4,
       "health": 30,
-      "avatarUrl": ""
+      "avatarUrl": "",
+      "id": "rkm5Zz9cY-"
     },
     {
       "name": "Reginald",
       "attack": 6,
       "defense": 4,
       "health": 30,
-      "avatarUrl": ""
+      "avatarUrl": "",
+      "id": "BJ49ZM9qFW"
     },
     {
       "name": "Simon",
       "attack": 6,
       "defense": 4,
       "health": 30,
-      "avatarUrl": ""
+      "avatarUrl": "",
+      "id": "ryHqZf99KW"
     },
     {
       "name": "Snot",
       "attack": 6,
       "defense": 4,
       "health": 30,
-      "avatarUrl": ""
+      "avatarUrl": "",
+      "id": "BJI5-M55Y-"
     }
   ],
   "battles": [],

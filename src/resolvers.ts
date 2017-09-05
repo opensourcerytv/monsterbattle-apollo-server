@@ -4,26 +4,39 @@ const adapter = new FileSync('database.json')
 const db = low(adapter)
 const shortid = require('shortid')
 
-db.defaults({ monsters: [
-	{name: 'George', attack: 6, defense: 4, health: 30, avatarUrl: ''},
-	{name: 'Mort', attack: 6, defense: 4, health: 30, avatarUrl: ''},
-	{name: 'Steve', attack: 6, defense: 4, health: 30, avatarUrl: ''},
-	{name: 'Donk', attack: 6, defense: 4, health: 30, avatarUrl: ''},
-	{name: 'Flip', attack: 6, defense: 4, health: 30, avatarUrl: ''},
-	{name: 'Reginald', attack: 6, defense: 4, health: 30, avatarUrl: ''},
-	{name: 'Simon', attack: 6, defense: 4, health: 30, avatarUrl: ''},
-	{name: 'Snot', attack: 6, defense: 4, health: 30, avatarUrl: ''},
-], battles: [], turns: [] }).write()
+import GoogleSheetsDB from './GoogleSheetsDB';
+
+db.defaults({ monsters: [], battles: [], turns: [] }).write()
+
+if (db.get('monsters').value().length === 0) {
+	[
+		{name: 'George', attack: 6, defense: 4, health: 30, avatarUrl: ''},
+		{name: 'Mort', attack: 6, defense: 4, health: 30, avatarUrl: ''},
+		{name: 'Steve', attack: 6, defense: 4, health: 30, avatarUrl: ''},
+		{name: 'Donk', attack: 6, defense: 4, health: 30, avatarUrl: ''},
+		{name: 'Flip', attack: 6, defense: 4, health: 30, avatarUrl: ''},
+		{name: 'Reginald', attack: 6, defense: 4, health: 30, avatarUrl: ''},
+		{name: 'Simon', attack: 6, defense: 4, health: 30, avatarUrl: ''},
+		{name: 'Snot', attack: 6, defense: 4, health: 30, avatarUrl: ''},
+	].map(monster => {
+		const id = shortid.generate();
+		db.get('monsters')
+			.push({ ...monster, id: id })
+			.write()
+	});
+}
 
 const resolvers = {
 	Query: {
 		monsters: (root, args, ctx) => {
-			const monsters = db.get('monsters').value();
-			console.log('monsters', monsters);
-			return monsters;
+			return GoogleSheetsDB.fetchMonsters();
+			
+			// const monsters = db.get('monsters').value();
+			// return monsters;
 		},
 		battles: (root, args, ctx) => {
-			// return DB.fetchBattles()
+			const battles = db.get('battles').value();
+			return battles;
 		},
 	},
 	
@@ -39,13 +52,15 @@ const resolvers = {
 		},
 
 		updateMonster: (root, args, ctx) => {
-			db.get('monsters')
-				.find({ id: args.id })
-				.assign(args)
-				.write()
-			return db.get('monsters')
-				.find({ id: args.id })
-				.value()
+			return GoogleSheetsDB.updateMonster(args);
+			
+			// db.get('monsters')
+			// 	.find({ id: args.id })
+			// 	.assign(args)
+			// 	.write()
+			// return db.get('monsters')
+			// 	.find({ id: args.id })
+			// 	.value()
 		},
 
 		deleteMonster: (root, args, ctx) => {
