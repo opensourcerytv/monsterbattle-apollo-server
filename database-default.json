@@ -1,0 +1,62 @@
+{
+	"monsters": [
+	  {
+		"name": "George",
+		"attack": 6,
+		"defense": 4,
+		"health": 30,
+		"avatarUrl": ""
+	  },
+	  {
+		"name": "Mort",
+		"attack": 6,
+		"defense": 4,
+		"health": 30,
+		"avatarUrl": ""
+	  },
+	  {
+		"name": "Steve",
+		"attack": 6,
+		"defense": 4,
+		"health": 30,
+		"avatarUrl": ""
+	  },
+	  {
+		"name": "Donk",
+		"attack": 6,
+		"defense": 4,
+		"health": 30,
+		"avatarUrl": ""
+	  },
+	  {
+		"name": "Flip",
+		"attack": 6,
+		"defense": 4,
+		"health": 30,
+		"avatarUrl": ""
+	  },
+	  {
+		"name": "Reginald",
+		"attack": 6,
+		"defense": 4,
+		"health": 30,
+		"avatarUrl": ""
+	  },
+	  {
+		"name": "Simon",
+		"attack": 6,
+		"defense": 4,
+		"health": 30,
+		"avatarUrl": ""
+	  },
+	  {
+		"name": "Snot",
+		"attack": 6,
+		"defense": 4,
+		"health": 30,
+		"avatarUrl": ""
+	  }
+	],
+	"battles": [],
+	"turns": []
+  }

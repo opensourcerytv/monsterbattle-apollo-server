@@ -1,4 +1,5 @@
 import * as express from 'express';
+import * as cors from 'cors';
 import * as bodyParser from 'body-parser';
 import { GraphQLSchema } from 'graphql';
 import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
@@ -15,11 +16,12 @@ const schema: GraphQLSchema = makeExecutableSchema({
 
 const PORT = 3666;
 const app = express();
+app.use(cors()); // Allow All
+app.use(bodyParser.json()); // Output JSON
 
 // bodyParser is needed just for POST.
-app.use('/graphql', bodyParser.json(), graphqlExpress({ schema: schema }));
+app.use('/graphql', graphqlExpress({ schema: schema }));
 app.use('/graphiql', graphiqlExpress({endpointURL: '/graphql' }));
-
 
 app.listen(PORT, () => {
 	console.log(`App listening on port ${PORT}`);

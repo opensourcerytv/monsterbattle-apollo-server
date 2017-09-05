@@ -1,3 +1,5 @@
+// NOTE: This code is not in use in this project.
+
 const log = require('debug')('GoogleSheetsDB');
 var GoogleSpreadsheet = require('google-spreadsheet');
 
