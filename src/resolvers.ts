@@ -115,16 +115,16 @@ const resolvers = {
 
 			// Update battle
 			if (monster1.name === defendingMonster.name) {
-				battle.monster1Health = battle.monster1Health - damage, 0
-				if (!battle.monster1Health) { // If monster health = 0, battle is over.
+				battle.monster1Health = Math.max(battle.monster1Health - damage, 0);
+				if (battle.monster1Health === 0) { // If monster health = 0, battle is over.
 					battle.winningMonsterName = monster2.name
 					battle.losingMonsterName = monster1.name
 					battle.finished = Math.floor(Date.now() / 1000)
 				}
 			}
 			if (monster2.name === defendingMonster.name) {
-				battle.monster2Health = battle.monster2Health - damage, 0
-				if (!battle.monster2Health) { // If monster health = 0, battle is over.
+				battle.monster2Health = Math.max(battle.monster2Health - damage, 0);
+				if (battle.monster2Health === 0) { // If monster health = 0, battle is over.
 					battle.winningMonsterName = monster1.name
 					battle.losingMonsterName = monster2.name
 					battle.finished = Math.floor(Date.now() / 1000)
@@ -160,6 +160,18 @@ const resolvers = {
 			return db.get('turns')
 				.filter({battleId: battle.id})
 				.value()
+		},
+		winner: (battle) => {
+			return db.get('monsters')
+				.find({ name: battle.winningMonsterName })
+				.value()
+			
+		},
+		loser: (battle) => {
+			return db.get('monsters')
+				.find({ name: battle.losingMonsterName })
+				.value()
+			
 		},
 	},
 };
