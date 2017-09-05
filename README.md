@@ -10,3 +10,9 @@ or
 `
 npm run watch
 `
+
+test via graphiql at:
+
+`
+localhost:3666/graphiql
+`
