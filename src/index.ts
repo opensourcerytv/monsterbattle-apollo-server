@@ -20,7 +20,12 @@ app.use(cors()); // Allow All
 app.use(bodyParser.json()); // Output JSON
 
 // bodyParser is needed just for POST.
-app.use('/graphql', graphqlExpress({ schema: schema }));
+app.use('/graphql', graphqlExpress((req, res) => {
+	console.log('req.body', req.body);
+	return ({ schema: schema }) 
+}));
+
+
 app.use('/graphiql', graphiqlExpress({endpointURL: '/graphql' }));
 
 app.listen(PORT, () => {
