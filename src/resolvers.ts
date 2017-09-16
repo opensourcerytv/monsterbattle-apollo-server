@@ -130,6 +130,7 @@ const resolvers = {
 					battle.finished = Math.floor(Date.now() / 1000)
 				}
 			}
+			
 			// Save updated battle.
 			db.get('battles')
 				.find({ id: battle.id })
