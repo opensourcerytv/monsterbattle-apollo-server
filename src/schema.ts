@@ -25,8 +25,8 @@ const typeDefs = `
 		id: String!
 		battleId: String!
 		timestamp: Int!
-		attackingMonsterName: Monster!
-		defendingMonsterName: Monster!
+		attackingMonster: Monster!
+		defendingMonster: Monster!
 		attackDiceRoll: Int!
 		attackPower: Int!
 		defensePower: Int!

@@ -175,6 +175,21 @@ const resolvers = {
 			
 		},
 	},
+
+	Turn: {
+		attackingMonster: (turn) => {
+			return db.get('monsters')
+				.find({ name: turn.attackingMonsterName })
+				.value()
+			
+		},
+		defendingMonster: (turn) => {
+			return db.get('monsters')
+				.find({ name: turn.defendingMonsterName })
+				.value()
+			
+		},
+	},
 };
 
 export default resolvers
