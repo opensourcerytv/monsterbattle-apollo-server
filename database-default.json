@@ -9,9 +9,9 @@
 	  },
 	  {
 		"name": "Mort",
-		"attack": 6,
-		"defense": 4,
-		"health": 30,
+		"attack": 100,
+		"defense": 2,
+		"health": 10,
 		"avatarUrl": ""
 	  },
 	  {
